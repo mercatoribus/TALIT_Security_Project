@@ -27,6 +27,7 @@ while True:
             while not button_a.get_presses():
                 sleep(59)
             music.stop()
+            sleep(1000)
 
 
 

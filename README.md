@@ -12,4 +12,3 @@ Wir benötigen zwei Microbits und einen Maqueen.
 1. Maqueen
 2. Microbit
 3. Microbit
-

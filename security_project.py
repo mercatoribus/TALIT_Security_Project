@@ -28,7 +28,7 @@ while True:
                 sleep(59)
             music.stop()
 
-#hallo
+
 
 
 

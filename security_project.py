@@ -12,7 +12,6 @@ def get_distance():
     distance = echo_pulse * 0.017 # Rechne Zeit in Distanz um.
     return distance
 
-
 start_distance = get_distance()
 print("Starting up, initial dist: ", start_distance)
 while True:

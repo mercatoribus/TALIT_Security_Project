@@ -5,6 +5,7 @@ import music
 import radio
 
 radio.config(group = 13)
+radio.on()
 
 def get_distance():
     # Distanz messen
@@ -19,6 +20,7 @@ start_distance = get_distance()
 print("Starting up, initial dist: ", start_distance)
 while True:
     message_in = radio.receive()
+
     current_distance = get_distance()
     if abs(start_distance - current_distance) > 10:
         sleep(3000)
@@ -26,8 +28,10 @@ while True:
         second_distance = get_distance()
         if abs(start_distance - second_distance) > 10:
             radio.send("Intrusion detected")
-  
+
+
     if message_in == "Reset":
+        display.scroll(message_in, wait=False)
         start_distance = get_distance()
-    
+
 

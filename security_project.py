@@ -31,7 +31,7 @@ while True:
             radio.send("Intrusion detected")
             print("Intrusion detected:", second_distance)
 
-    if message_in == "Reset" ():
+    if message_in == "Reset":
         start_distance = get_distance()
 
 

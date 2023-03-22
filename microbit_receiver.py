@@ -9,7 +9,7 @@ receive = 1
 while True:
     message_in = radio.receive()
 
-    if message_in == "Intrusion detected" and receive==1:
+    if message_in == "Intrusion detected" and receive == 1:
         display.scroll(message_in, wait=False)
         music.pitch(2000, wait = False)
         while not button_a.get_presses():

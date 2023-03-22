@@ -22,4 +22,3 @@ while True:
     if button_b.get_presses():
         radio.send("Reset")
         receive = 1
-
